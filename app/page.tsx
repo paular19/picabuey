@@ -127,11 +127,6 @@ export default function Page() {
               border: "1px solid rgba(255,255,255,0.22)",
             }}>
             <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold"
-                style={{ background: "rgba(255,255,255,0.12)", border: "1px solid rgba(255,255,255,0.18)" }}>
-                <span className="inline-block w-2 h-2 rounded-full" style={{ background: "var(--dorado)" }} />
-                Desde 2007 · Postventa fuerte · Respaldo regional
-              </div>
 
               <h2 className="mt-4 text-3xl md:text-4xl font-bold">
                 Casi 20 años acompañando al productor.
