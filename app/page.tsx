@@ -37,7 +37,7 @@ export default function Page() {
                   <span className="ml-3"><Badge>Postventa fuerte</Badge></span>
                   <span className="ml-3"><Badge>Respaldo regional</Badge></span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold">Maquinaria que trabaja como vos.</h1>
+                <h1 className="text-4xl md:text-5xl font-bold max-w-xl">Maquinaria que trabaja como vos.</h1>
                 <p className="mt-4 text-lg max-w-xl">Equipos agrícolas, repuestos y servicio técnico que responden cuando más lo necesitás.</p>
                 <div className="mt-6 flex flex-col sm:flex-row gap-3">
                   <div className="mt-6 flex flex-col sm:flex-row gap-3">
