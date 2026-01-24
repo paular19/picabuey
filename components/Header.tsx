@@ -4,7 +4,6 @@ import Image from 'next/image'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const wa = 'https://wa.me/549XXXXXXXXXX?text=Hola%20PICABUEY%2C%20quiero%20consultar%20por%20VENTAS'
 
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200 header-fade">
@@ -29,7 +28,6 @@ export default function Header() {
           <a href="#contacto" className="text-gray-700 hover:text-[var(--verde-deep)]">Contacto</a>
         </nav>
         <div className="flex items-center gap-3">
-          <a href={wa} className="hidden sm:inline-flex items-center gap-2 bg-[var(--verde)] hover:bg-[var(--verde-deep)] text-white px-3 py-2 rounded text-sm btn-press">WhatsApp</a>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden p-2 text-gray-600 hover:text-[var(--verde-deep)] transition-colors"
@@ -58,7 +56,6 @@ export default function Header() {
             <a href="#marcas" onClick={() => setIsMenuOpen(false)} className="text-gray-700 hover:text-[var(--verde-deep)] py-2">Marcas</a>
             <a href="#nosotros" onClick={() => setIsMenuOpen(false)} className="text-gray-700 hover:text-[var(--verde-deep)] py-2">Nosotros</a>
             <a href="#contacto" onClick={() => setIsMenuOpen(false)} className="text-gray-700 hover:text-[var(--verde-deep)] py-2">Contacto</a>
-            <a href={wa} className="inline-flex items-center justify-center gap-2 bg-[var(--verde)] hover:bg-[var(--verde-deep)] text-white px-4 py-3 rounded text-sm btn-press mt-2">WhatsApp</a>
           </nav>
         </div>
       )}
