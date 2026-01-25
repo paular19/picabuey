@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    unoptimized: true,
+    // Usa el optimizador de Next y sirve AVIF/WebP cuando el navegador lo soporta.
+    formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
         protocol: 'https',
@@ -12,4 +13,5 @@ const nextConfig = {
     ],
   },
 }
+
 module.exports = nextConfig
