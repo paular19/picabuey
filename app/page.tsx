@@ -11,7 +11,7 @@ import MapEmbed from '../components/MapEmbed'
 import Footer from '../components/Footer'
 import Image from 'next/image'
 
-const heroImage = 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&q=80'
+const heroImage = '/images/bannernuevo.jpeg'
 const machines = [
   { title: 'B2401', image: '/images/B2401.png', desc: '24 hp diesel - 4x4 - 3 puntos con 600 kg de levante; ancho total 1.11 m. Ideal para verdura y mantenimiento de espacios verdes.', brand: 'KUBOTA' },
   { title: 'B2401 Super Narrow', image: '/images/B2401SuperNarrow.png', desc: 'Versión trocha angosta (ancho total 0.90 m). Ideal para horticultura, verdura y mantenimiento de espacios verdes.', brand: 'KUBOTA' },
@@ -30,7 +30,16 @@ const machines = [
   { title: 'Bruttus 12000', image: '/images/bruttus12000.png', desc: 'Distribuidor por gravedad con excelente uniformidad y precisión para productos en polvo y fertilizantes granulados.', brand: 'STARA' },
   { title: 'Hércules 10000', image: '/images/hercules10000.png', desc: 'Distribuidor de arrastre inoxidable para productos en polvo, fertilizantes y semillas con excelente uniformidad.', brand: 'STARA' },
   { title: 'Hércules 6.0', image: '/images/hercules6.0.png', desc: 'Distribuidor autopropulsado con excelente calidad de aplicación y precisión de dosis. Alto rendimiento operativo.', brand: 'STARA' },
-  { title: 'Guapa', image: '/images/guapa.png', desc: 'Modelos de 24 a 28 líneas (ideal arroz) y Guapa Supra 44-60 líneas. Guapa Supra Winter para cultivos de invierno como trigo, avena y cebada.', brand: 'STARA' }
+  { title: 'Guapa', image: '/images/guapa.png', desc: 'Modelos de 24 a 28 líneas (ideal arroz) y Guapa Supra 44-60 líneas. Guapa Supra Winter para cultivos de invierno como trigo, avena y cebada.', brand: 'STARA' },
+  { title: 'Trion 710, 720, 740', image: '/images/trion.png', desc: 'Tecnología de trilla APS + ROTO PLUS para alto rendimiento con cuidado del grano. Tolva de hasta 12.000 litros y descarga de hasta 130 l/s. Motores Cummins L9 eficientes (Stage V), automatización CEMOS DIALOG y CEMOS AUTOMATIC, y gran versatilidad con cabina confortable, TERRA TRAC y opción MONTANA para pendientes.', brand: 'CLAAS' },
+  { title: 'Lexion 7700, 8800', image: '/images/lexion.png', desc: 'Sistema APS SYNFLOW con trilla eficiente y cuidadosa de la paja, con cambios rápidos entre cultivos. Automatización avanzada CEMOS (AUTO CROP FLOW, AUTO SLOPE y AUTO CLEANING), alta potencia y gran capacidad de descarga, tecnología TERRA TRAC, cabina confortable con CEBIS y adaptación ágil a distintos cultivos.', brand: 'CLAAS' },
+  { title: 'Jaguar 900 Green Eye', image: '/images/jaguar.png', desc: 'Tambor de cuchillas V-FLEX. CEMOS AUTO KNIFE CONDITION para monitorear cuchillas y recomendar afilado óptimo. CLAAS NUTRIMETER para medir sustancia seca y componentes en tiempo real. Ejes delantero y trasero con regulación de presión de neumáticos para adaptar tracción y cuidado del suelo.', brand: 'CLAAS' },
+  { title: 'Liner', image: '/images/liner.png', desc: 'Rastrillo hilerador CLAAS LINER para una formación de hileras uniforme, limpia y eficiente en distintos volúmenes de forraje.', brand: 'CLAAS' },
+  { title: 'Segadora Disco', image: '/images/segadora.png', desc: 'Segadora de discos CLAAS diseñada para corte parejo, alta productividad y excelente calidad de trabajo en forrajes.', brand: 'CLAAS' },
+  { title: 'Variant', image: '/images/variant.png', desc: 'Rotoenfardadora CLAAS VARIANT con alto rendimiento, compactación uniforme y configuración flexible para diferentes condiciones de trabajo.', brand: 'CLAAS' },
+  { title: 'Axion 900', image: '/images/axion900.png', desc: 'Tractor CLAAS AXION 900 de alta potencia, pensado para tareas exigentes con gran eficiencia, tracción y confort operativo.', brand: 'CLAAS' },
+  { title: 'Axion 800', image: '/images/axion800.png', desc: 'Tractor CLAAS AXION 800 versátil y robusto, ideal para labores mixtas con excelente relación entre potencia, consumo y maniobrabilidad.', brand: 'CLAAS' },
+  { title: 'Arion 600', image: '/images/arion600.png', desc: 'Tractor CLAAS ARION 600 ágil y confiable para múltiples aplicaciones, con cabina cómoda y tecnología orientada a productividad diaria.', brand: 'CLAAS' }
 ]
 
 export default function Page() {
@@ -141,7 +150,7 @@ export default function Page() {
                 <div className="rounded-xl p-5 text-white shadow-soft" style={{ background: 'rgb(184, 124, 35)' }}>
                   <div className="text-sm uppercase tracking-wide text-white/85">Ventas</div>
                   <div className="mt-2 font-semibold text-xl">387 457 6655</div>
-                  <div className="mt-1 text-sm text-white/90">ventas@picabueystl.com.ar</div>
+                  <div className="mt-1 text-sm text-white/90">ventas@picabuey.com.ar</div>
                   <a
                     href="https://wa.me/5493874576655?text=Hola%2C%20quiero%20contactar%20con%20Ventas"
                     target="_blank"
@@ -246,6 +255,20 @@ export default function Page() {
       </section>
 
       <Footer />
+
+      {/* Botón flotante WhatsApp */}
+      <a
+        href="https://wa.me/5493874576655"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full shadow-lg hover:brightness-110 transition-all"
+        style={{ background: '#25D366' }}
+        aria-label="Contactar por WhatsApp"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-8 h-8 fill-white">
+          <path d="M16 0C7.164 0 0 7.163 0 16c0 2.822.737 5.469 2.027 7.77L0 32l8.454-2.012A15.94 15.94 0 0 0 16 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm8.07 22.226c-.336.943-1.97 1.797-2.7 1.912-.73.115-1.647.163-2.655-.166-.612-.196-1.397-.457-2.399-.895-4.22-1.82-6.977-6.083-7.19-6.366-.212-.283-1.733-2.307-1.733-4.4 0-2.093 1.097-3.12 1.487-3.543.39-.423.85-.529 1.133-.529.283 0 .566.003.814.015.26.013.609-.099.953.727.355.847 1.207 2.94 1.313 3.155.106.212.177.46.035.742-.141.283-.212.46-.424.707-.212.248-.446.554-.637.744-.212.212-.433.44-.186.864.247.424 1.097 1.81 2.353 2.933 1.617 1.44 2.98 1.885 3.404 2.097.424.212.67.177.917-.106.247-.283 1.062-1.238 1.345-1.662.283-.424.566-.353.954-.212.388.141 2.47 1.167 2.894 1.38.424.212.707.318.813.494.106.177.106 1.02-.23 1.963z" />
+        </svg>
+      </a>
     </main>
   )
 }

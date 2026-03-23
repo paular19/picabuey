@@ -20,8 +20,13 @@ export default function MachinesTabs({ machines }: MachinesTabsProps) {
 
     const kubotaMachines = machines.filter(m => m.brand === 'KUBOTA')
     const staraMachines = machines.filter(m => m.brand === 'STARA')
+    const claasMachines = machines.filter(m => m.brand === 'CLAAS')
 
-    const displayedMachines = activeTab === 'kubota' ? kubotaMachines : staraMachines
+    const displayedMachines = activeTab === 'kubota'
+        ? kubotaMachines
+        : activeTab === 'stara'
+            ? staraMachines
+            : claasMachines
 
     return (
         <div>
@@ -69,6 +74,29 @@ export default function MachinesTabs({ machines }: MachinesTabsProps) {
                     </div>
                     {/* Active Indicator */}
                     {activeTab === 'kubota' && (
+                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-orange-500 rounded-t-full" />
+                    )}
+                </button>
+
+                {/* CLAAS Tab */}
+                <button
+                    onClick={() => setActiveTab('claas')}
+                    className="relative pb-4 transition-all duration-300 group"
+                >
+                    <div className="relative w-24 h-14">
+                        <Image
+                            src="/images/Claas-Logo.svg"
+                            alt="CLAAS"
+                            fill
+                            sizes="120px"
+                            className="object-contain"
+                            style={{
+                                opacity: activeTab === 'claas' ? 1 : 0.5
+                            }}
+                        />
+                    </div>
+                    {/* Active Indicator */}
+                    {activeTab === 'claas' && (
                         <div className="absolute bottom-0 left-0 right-0 h-1 bg-orange-500 rounded-t-full" />
                     )}
                 </button>

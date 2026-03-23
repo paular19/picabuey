@@ -60,7 +60,7 @@ export default function Footer() {
             <div className="mt-3 text-sm text-white/85 space-y-3">
               <div>
                 <div className="text-white font-medium">Email</div>
-                <div>ventas@picabuey.com</div>
+                <div>ventas@picabuey.com.ar</div>
               </div>
 
               <div>

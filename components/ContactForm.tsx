@@ -15,7 +15,7 @@ export default function ContactForm() {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    const to = 'ventas@picabuey.com'
+    const to = 'ventas@picabuey.com.ar'
     const subject = encodeURIComponent('Contacto desde sitio - ' + name)
     const body = encodeURIComponent(
       `Nombre: ${name}\nTeléfono: ${phone}\n\nMensaje:\n${message}`
@@ -63,7 +63,7 @@ export default function ContactForm() {
           Enviar
         </button>
 
-       
+
       </div>
     </form>
   )

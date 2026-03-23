@@ -2,19 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
+:root {
   --verde: 4 83 43;
   --verde-profundo: 2 83 43;
   --dorado: 184 124 35;
   --plata: 167 167 165;
   --dusty-grape: 83 91 132;
 
-  --gradient-overlay: linear-gradient(
-    180deg,
-    rgba(2,83,43,0.9) 0%,
-    rgba(2,83,43,0.75) 40%,
-    rgba(2,83,43,0.6) 100%
-  );
+  --gradient-overlay: linear-gradient(180deg,
+      rgba(2, 83, 43, 0.55) 0%,
+      rgba(2, 83, 43, 0.42) 40%,
+      rgba(2, 83, 43, 0.3) 100%);
 
   --azul-cta: #293A8A;
 
@@ -22,11 +20,13 @@
 }
 
 
-html, body, #__next {
+html,
+body,
+#__next {
   height: 100%;
 }
 
-body{
+body {
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   background: white;
   color: white;
@@ -45,14 +45,32 @@ a {
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes pop {
-  0% { transform: scale(0.98); opacity: 0; }
-  60% { transform: scale(1.02); opacity: 1; }
-  100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(0.98);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.02);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .animate-fade-up {
@@ -62,7 +80,7 @@ a {
 
 .animate-pop {
   opacity: 0;
-  animation: pop 420ms cubic-bezier(.2,.9,.3,1) forwards;
+  animation: pop 420ms cubic-bezier(.2, .9, .3, 1) forwards;
 }
 
 .card-hover {
@@ -71,7 +89,7 @@ a {
 
 .card-hover:hover {
   transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 10px 30px rgba(4,83,43,0.12);
+  box-shadow: 0 10px 30px rgba(4, 83, 43, 0.12);
 }
 
 .btn-press {
@@ -111,7 +129,7 @@ a {
 }
 
 .btn-white:hover {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .brand-marquee {
@@ -119,11 +137,17 @@ a {
 }
 
 @keyframes brandMarquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-33.333%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-33.333%);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .brand-marquee { animation: none; }
+  .brand-marquee {
+    animation: none;
+  }
 }
-
