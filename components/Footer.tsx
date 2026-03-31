@@ -65,8 +65,14 @@ export default function Footer() {
 
               <div>
                 <div className="text-white font-medium">Horarios</div>
-                <div>Lun a Vie 9:00–18:00 · Sáb 9:00–12:30</div>
-                <div>Embarcación 8:30–12:30 y 16:00–20:00</div>
+                <div>Salta: 9:00–18:00 · Sáb 9:00–12:30</div>
+                <div>Embarcación: 8:30–12:30 y 16:00–20:00</div>
+              </div>
+
+              <div>
+                <div className="text-white font-medium">Direcciones</div>
+                <div>Av. Paraguay 2720 en Salta</div>
+                <div>Av. España 565 en Embarcación</div>
               </div>
 
               <div>

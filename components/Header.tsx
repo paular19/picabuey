@@ -7,8 +7,8 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200 header-fade overflow-visible">
-      <div className="mx-auto px-6 py-3 flex items-center justify-between container overflow-visible">
-        <div className="relative h-32 w-32 -my-6">
+      <div className="mx-auto px-4 sm:px-6 py-3 flex items-center justify-between container overflow-visible">
+        <div className="relative h-24 w-24 sm:h-32 sm:w-32 -my-4 sm:-my-6">
           <Image
             src="/images/logocuadrado.png"
             alt="PICABUEY SRL Logo"

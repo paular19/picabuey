@@ -4,14 +4,13 @@ import Badge from '../components/Badge'
 import SolutionCard from '../components/SolutionCard'
 import MachinesTabs from '../components/MachinesTabs'
 import BrandsGrid from '../components/BrandsGrid'
-import Timeline from '../components/Timeline'
 import Benefits from '../components/Benefits'
 import ContactForm from '../components/ContactForm'
 import MapEmbed from '../components/MapEmbed'
 import Footer from '../components/Footer'
 import Image from 'next/image'
 
-const heroImage = '/images/bannernuevo.jpeg'
+const heroImage = '/images/bannernuevo2.jpeg'
 const machines = [
   { title: 'B2401', image: '/images/B2401.png', desc: '24 hp diesel - 4x4 - 3 puntos con 600 kg de levante; ancho total 1.11 m. Ideal para verdura y mantenimiento de espacios verdes.', brand: 'KUBOTA' },
   { title: 'B2401 Super Narrow', image: '/images/B2401SuperNarrow.png', desc: 'Versión trocha angosta (ancho total 0.90 m). Ideal para horticultura, verdura y mantenimiento de espacios verdes.', brand: 'KUBOTA' },
@@ -39,7 +38,20 @@ const machines = [
   { title: 'Variant', image: '/images/variant.png', desc: 'Rotoenfardadora CLAAS VARIANT con alto rendimiento, compactación uniforme y configuración flexible para diferentes condiciones de trabajo.', brand: 'CLAAS' },
   { title: 'Axion 900', image: '/images/axion900.png', desc: 'Tractor CLAAS AXION 900 de alta potencia, pensado para tareas exigentes con gran eficiencia, tracción y confort operativo.', brand: 'CLAAS' },
   { title: 'Axion 800', image: '/images/axion800.png', desc: 'Tractor CLAAS AXION 800 versátil y robusto, ideal para labores mixtas con excelente relación entre potencia, consumo y maniobrabilidad.', brand: 'CLAAS' },
-  { title: 'Arion 600', image: '/images/arion600.png', desc: 'Tractor CLAAS ARION 600 ágil y confiable para múltiples aplicaciones, con cabina cómoda y tecnología orientada a productividad diaria.', brand: 'CLAAS' }
+  { title: 'Arion 600', image: '/images/arion600.png', desc: 'Tractor CLAAS ARION 600 ágil y confiable para múltiples aplicaciones, con cabina cómoda y tecnología orientada a productividad diaria.', brand: 'CLAAS' },
+  { title: 'LOVOL TE354', image: '/images/LOVOL TE354.png', desc: 'Lovol 354 - 35 hp doble tracción. Motor diésel 4 cilindros aspirado (2300 cc), transmisión sincronizada 8+8 con inversor mecánico, levante de 3 puntos (710 kg). Rodados: 7,5 x 16 delantero y 12,4 x 24 trasero.', brand: 'LOVOL' },
+  { title: 'LOVOL TH754', image: '/images/LOVOL - TH754.png', desc: 'LOVOL TH754 - 75 hp doble tracción. Motor diésel 4 cilindros aspirado (2400 cc), transmisión mecánica sincronizada 12+12, inversor mecánico sincronizado, levante de 3 puntos (2400 kg). Rodado delantero 21,4 x 24 y trasero 18,4 x 30.', brand: 'LOVOL' },
+  { title: 'LOVOL TH904', image: '/images/LOVOL 904-H.png', desc: 'LOVOL TH904 - 90 hp doble tracción. Motor diésel 4 cilindros turbo (2400 cc), transmisión mecánica sincronizada 12+12, inversor mecánico sincronizado, levante de 3 puntos (2400 kg). Rodado delantero 21,4 x 24 y trasero 18,4 x 30.', brand: 'LOVOL' },
+  { title: 'LOVOL TD1004', image: '/images/LOVOL TD1004 – 100HP doble tracción.png', desc: '100 hp turbo alimentado, freno de disco húmedo, motor WEICHAI 4 cilindros, tracción 4x4, velocidades 16+8 sincronizado, dirección hidráulica, 2200 rpm, levante a 610 mm de 2000 kg, peso total 4740 kg. Rodados: 13,6 x 24 / 16,9 x 34.', brand: 'LOVOL' },
+  { title: 'LOVOL TX1104', image: '/images/LOVOL TX1104.png', desc: '110 hp turbo alimentado, freno de disco húmedo, motor WEICHAI 4 cilindros, tracción 4x4, velocidades 12F + 12R sincronizado, toma de fuerza 540-1000 rpm, dirección hidráulica, 2200 rpm, levante a 610 mm de 2200 kg, peso total 4740 kg. Rodados: 13,6 x 24 / 16,9 x 34.', brand: 'LOVOL' },
+  { title: 'LOVOL TX1204', image: '/images/LOVOL TX1204.png', desc: '120 hp turbo alimentado, freno de disco húmedo, motor WEICHAI 4 cilindros, tracción 4x4, velocidades 12+12 sincronizado, dirección hidráulica, 2200 rpm, levante a 610 mm > 2100 kg, peso total 5100 kg.', brand: 'LOVOL' },
+  { title: 'LOVOL TR1504', image: '/images/LOVOL TR1504.png', desc: '150 hp turbo alimentado, embrague seco 14 doble, motor SHANGHAI 6 cilindros, tracción 4x4, velocidades 16+16 sincronizado, dirección hidráulica, 2200 rpm, levante a 610 mm > 3500 kg, peso total 7620 kg. Modelo desarrollado por el equipo técnico europeo de Lovol para granjas medianas y grandes, con conducción cómoda y rendimiento confiable.', brand: 'LOVOL' },
+  { title: 'LOVOL TD1454', image: '/images/LOVOL TD1454.png', desc: '145 hp turbo alimentado, embrague seco 13 doble, motor SHANGHAI 6 cilindros, tracción 4x4, velocidades 16+8 sincronizado, toma de fuerza 540-1000 rpm, dirección hidráulica, 2200 rpm, levante a 610 mm > 3500 kg.', brand: 'LOVOL' },
+  { title: 'Tractor EVO 205', image: '/images/Tractor EVO 205.png', desc: 'Tractor EVO 205 con la impronta de la marca más elegida por los argentinos. Sólido, funcional y versátil, con excelente desempeño para múltiples tareas en campo, ganadería y tambo. Ideal para actividades forrajeras, desmalezado, hilerado, picado, rollos, roturación, siembra de predios, tabaco, cosecha y traslado.', brand: 'PAUNY' },
+  { title: 'Tractor EVO ASISTIDO 230-250-280 A', image: '/images/Tractor EVO ASISTIDO 230 –250 – 280 A.png', desc: 'La línea EVO propone una amplia gama con óptima relación calidad/precio para llevar la fuerza de Pauny al campo. Tracción asistida, articulados doble tracción y tracción total P-Trac con variantes de potencia y motor para grandes extensiones, bajo consumo por hectárea y máxima fuerza de tracción.', brand: 'PAUNY' },
+  { title: 'Tractor EVO ASISTIDO NG 250/280', image: '/images/Tractor EVO ASISTIDO 230 –250 – 280 A.png', desc: 'La línea EVO NG ofrece tractores con tracción asistida y variantes de potencia y motor para grandes extensiones. Combina bajo consumo por hectárea, máxima fuerza de tracción, mejor rendimiento y mayor confort.', brand: 'PAUNY' },
+  { title: 'Brioso 215', image: '/images/Brioso 215.png', desc: 'Un compacto de fuerza y agilidad. De gran potencia, es ideal para tareas difíciles y exigentes. Equipado con motor Cummins y sistema hidráulico Load Sensing Premium. Diseñado para siembra directa de última generación, con gran visibilidad, ergonomía, eficiencia de consumo y confiabilidad superadora.', brand: 'PAUNY' },
+  { title: 'Tractor Línea BRAVO 540/580ie/710ie/780ie', image: '/images/TRACTOR LÍNEA BRAVO.png', desc: 'La línea BRAVO ofrece mayor capacidad hidráulica y eficiencia en consumo de combustible. Especialmente desarrollada para siembra directa neumática con caudal variable, incorpora tecnología para mínima compactación y mayor capacidad de tracción. Cabina totalmente presurizada, visión panorámica y máximo confort y seguridad del operario.', brand: 'PAUNY' }
 ]
 
 export default function Page() {
@@ -47,7 +59,7 @@ export default function Page() {
     <main id="inicio" className="min-h-screen text-gray-900">
       <Header />
       <section className="relative">
-        <div className="relative h-[520px] w-full">
+        <div className="relative h-[620px] md:h-[760px] w-full">
           <Image src={heroImage} alt="Hero campo" fill priority sizes="100vw" className="object-cover" />
           <div className="absolute inset-0" style={{ background: 'var(--gradient-overlay)' }} />
           <div className="absolute inset-0 flex items-center">
@@ -104,6 +116,34 @@ export default function Page() {
             <SolutionCard title="Venta de maquinaria" desc="Equipos robustos y listos para trabajar." cta="https://wa.me/549XXXXXXXXXX?text=Hola%20PICABUEY%2C%20quiero%20consultar%20por%20VENTAS" style={{ animationDelay: '80ms' }} />
             <SolutionCard title="Repuestos" desc="Stock y envío rápido a toda la región." cta="https://wa.me/549XXXXXXXXXX?text=Hola%20PICABUEY%2C%20quiero%20consultar%20por%20REPUESTOS" style={{ animationDelay: '160ms' }} />
             <SolutionCard title="Servicio técnico" desc="Postventa y mantenimiento especializado." cta="https://wa.me/549XXXXXXXXXX?text=Hola%20PICABUEY%2C%20quiero%20consultar%20por%20SERVICIOS" style={{ animationDelay: '240ms' }} />
+          </div>
+        </div>
+      </section>
+
+      <section id="repuestos" className="py-16">
+        <div className="container mx-auto px-6">
+          <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-soft">
+            <h2 className="text-2xl font-bold text-[var(--verde)]">Repuestos Originales</h2>
+            <p className="mt-4 text-gray-700">
+              En Picabuey sabemos que cada hora cuenta en el campo. Por eso ofrecemos un servicio integral de repuestos
+              originales para garantizar el máximo rendimiento, seguridad y vida útil de tu maquinaria agrícola.
+            </p>
+            <p className="mt-4 text-gray-700">
+              Trabajamos con repuestos oficiales de marcas líderes como Stara, CLAAS, Pauny, Kubota, Lovol y Genovese,
+              asegurando compatibilidad exacta y desempeño óptimo en cada equipo.
+            </p>
+            <h3 className="mt-6 text-lg font-semibold text-[var(--verde)]">¿Por qué elegir repuestos originales?</h3>
+            <ul className="mt-3 space-y-2 text-gray-700">
+              <li>✔ Compatibilidad 100% garantizada</li>
+              <li>✔ Mayor durabilidad y rendimiento</li>
+              <li>✔ Seguridad operativa</li>
+              <li>✔ Respaldo oficial de fábrica</li>
+              <li>✔ Mejor valor a largo plazo</li>
+            </ul>
+            <p className="mt-4 text-gray-700">
+              Contamos con stock permanente y un equipo de asesores especializados que te ayudan a identificar el
+              repuesto correcto de forma rápida y precisa.
+            </p>
           </div>
         </div>
       </section>
@@ -195,27 +235,12 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Hitos + Beneficios */}
-          <div className="mt-10 grid lg:grid-cols-12 gap-8">
-            {/* Timeline en cards (más visual) */}
-            <div className="lg:col-span-7">
-              <h3 className="text-lg font-semibold text-[var(--verde)]">Nuestra historia</h3>
-              <p className="text-gray-600 mt-2">
-                Crecimos con un foco claro: servicio, repuestos y equipos que rinden cuando importa.
-              </p>
+          <div className="mt-10">
+            <div className="rounded-2xl p-6 bg-gray-50 border border-gray-200">
+              <h3 className="text-lg font-semibold text-[var(--verde)]">Por qué elegirnos</h3>
+              <p className="text-gray-600 mt-2">Confianza, respuesta y respaldo real.</p>
               <div className="mt-5">
-                <Timeline />
-              </div>
-            </div>
-
-            {/* Beneficios en bloque lateral */}
-            <div className="lg:col-span-5">
-              <div className="rounded-2xl p-6 bg-gray-50 border border-gray-200">
-                <h3 className="text-lg font-semibold text-[var(--verde)]">Por qué elegirnos</h3>
-                <p className="text-gray-600 mt-2">Confianza, respuesta y respaldo real.</p>
-                <div className="mt-5">
-                  <Benefits />
-                </div>
+                <Benefits />
               </div>
             </div>
           </div>
@@ -235,11 +260,16 @@ export default function Page() {
               </div>
               <div className="bg-white p-4 rounded-lg shadow-soft text-gray-800">
                 <div className="font-semibold">Horarios - Salta</div>
-                <div className="text-sm text-gray-600">Lun a Vie: 9:00 a 18:00<br />Sáb: 9:00 a 12:30</div>
+                <div className="text-sm text-gray-600">9:00–18:00 · Sáb 9:00–12:30</div>
               </div>
               <div className="bg-white p-4 rounded-lg shadow-soft text-gray-800">
                 <div className="font-semibold">Horarios - Embarcación</div>
-                <div className="text-sm text-gray-600">8:30 a 12:30 y 16:00 a 20:00</div>
+                <div className="text-sm text-gray-600">8:30–12:30 y 16:00–20:00</div>
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow-soft text-gray-800">
+                <div className="font-semibold">Direcciones</div>
+                <div className="text-sm text-gray-600">Av. Paraguay 2720 - Salta 
+                  <br></br>Av. España 565 - Embarcación</div>
               </div>
             </div>
 
@@ -258,7 +288,7 @@ export default function Page() {
 
       {/* Botón flotante WhatsApp */}
       <a
-        href="https://wa.me/5493874576655"
+        href="https://wa.me/5493875889649"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full shadow-lg hover:brightness-110 transition-all"

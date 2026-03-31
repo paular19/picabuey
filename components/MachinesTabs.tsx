@@ -21,21 +21,27 @@ export default function MachinesTabs({ machines }: MachinesTabsProps) {
     const kubotaMachines = machines.filter(m => m.brand === 'KUBOTA')
     const staraMachines = machines.filter(m => m.brand === 'STARA')
     const claasMachines = machines.filter(m => m.brand === 'CLAAS')
+    const lovolMachines = machines.filter(m => m.brand === 'LOVOL')
+    const paunyMachines = machines.filter(m => m.brand === 'PAUNY')
 
     const displayedMachines = activeTab === 'kubota'
         ? kubotaMachines
         : activeTab === 'stara'
             ? staraMachines
-            : claasMachines
+            : activeTab === 'claas'
+                ? claasMachines
+                : activeTab === 'lovol'
+                    ? lovolMachines
+                    : paunyMachines
 
     return (
         <div>
             {/* Tab Navigation */}
-            <div className="flex gap-8 mb-8 border-b-2 border-gray-200 pb-0">
+            <div className="flex gap-5 md:gap-8 mb-8 border-b-2 border-gray-200 pb-0 overflow-x-auto overflow-y-hidden whitespace-nowrap">
                 {/* Stara Tab */}
                 <button
                     onClick={() => setActiveTab('stara')}
-                    className="relative pb-4 transition-all duration-300 group"
+                    className="relative pb-4 transition-all duration-300 group shrink-0"
                 >
                     <div className="relative w-32 h-16">
                         <Image
@@ -58,7 +64,7 @@ export default function MachinesTabs({ machines }: MachinesTabsProps) {
                 {/* Kubota Tab */}
                 <button
                     onClick={() => setActiveTab('kubota')}
-                    className="relative pb-4 transition-all duration-300 group"
+                    className="relative pb-4 transition-all duration-300 group shrink-0"
                 >
                     <div className="relative w-24 h-14">
                         <Image
@@ -81,7 +87,7 @@ export default function MachinesTabs({ machines }: MachinesTabsProps) {
                 {/* CLAAS Tab */}
                 <button
                     onClick={() => setActiveTab('claas')}
-                    className="relative pb-4 transition-all duration-300 group"
+                    className="relative pb-4 transition-all duration-300 group shrink-0"
                 >
                     <div className="relative w-24 h-14">
                         <Image
@@ -97,6 +103,50 @@ export default function MachinesTabs({ machines }: MachinesTabsProps) {
                     </div>
                     {/* Active Indicator */}
                     {activeTab === 'claas' && (
+                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-orange-500 rounded-t-full" />
+                    )}
+                </button>
+
+                {/* LOVOL Tab */}
+                <button
+                    onClick={() => setActiveTab('lovol')}
+                    className="relative pb-4 transition-all duration-300 group shrink-0"
+                >
+                    <div className="relative w-28 h-14">
+                        <Image
+                            src="/images/lovoldef.png"
+                            alt="LOVOL"
+                            fill
+                            sizes="120px"
+                            className="object-contain"
+                            style={{
+                                opacity: activeTab === 'lovol' ? 1 : 0.5
+                            }}
+                        />
+                    </div>
+                    {activeTab === 'lovol' && (
+                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-orange-500 rounded-t-full" />
+                    )}
+                </button>
+
+                {/* PAUNY Tab */}
+                <button
+                    onClick={() => setActiveTab('pauny')}
+                    className="relative pb-4 transition-all duration-300 group shrink-0"
+                >
+                    <div className="relative w-28 h-14">
+                        <Image
+                            src="/images/paunydef.png"
+                            alt="PAUNY"
+                            fill
+                            sizes="120px"
+                            className="object-contain"
+                            style={{
+                                opacity: activeTab === 'pauny' ? 1 : 0.5
+                            }}
+                        />
+                    </div>
+                    {activeTab === 'pauny' && (
                         <div className="absolute bottom-0 left-0 right-0 h-1 bg-orange-500 rounded-t-full" />
                     )}
                 </button>
