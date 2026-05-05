@@ -45,11 +45,11 @@ const machines = [
   { title: 'LOVOL TD1004', image: '/images/LOVOL TD1004 – 100HP doble tracción.png', desc: '100 hp turbo alimentado, freno de disco húmedo, motor WEICHAI 4 cilindros, tracción 4x4, velocidades 16+8 sincronizado, dirección hidráulica, 2200 rpm, levante a 610 mm de 2000 kg, peso total 4740 kg. Rodados: 13,6 x 24 / 16,9 x 34.', brand: 'LOVOL' },
   { title: 'LOVOL TX1104', image: '/images/LOVOL TX1104.png', desc: '110 hp turbo alimentado, freno de disco húmedo, motor WEICHAI 4 cilindros, tracción 4x4, velocidades 12F + 12R sincronizado, toma de fuerza 540-1000 rpm, dirección hidráulica, 2200 rpm, levante a 610 mm de 2200 kg, peso total 4740 kg. Rodados: 13,6 x 24 / 16,9 x 34.', brand: 'LOVOL' },
   { title: 'LOVOL TX1204', image: '/images/LOVOL TX1204.png', desc: '120 hp turbo alimentado, freno de disco húmedo, motor WEICHAI 4 cilindros, tracción 4x4, velocidades 12+12 sincronizado, dirección hidráulica, 2200 rpm, levante a 610 mm > 2100 kg, peso total 5100 kg.', brand: 'LOVOL' },
-  { title: 'LOVOL TR1504', image: '/images/LOVOL TR1504.png', desc: '150 hp turbo alimentado, embrague seco 14 doble, motor SHANGHAI 6 cilindros, tracción 4x4, velocidades 16+16 sincronizado, dirección hidráulica, 2200 rpm, levante a 610 mm > 3500 kg, peso total 7620 kg. Modelo desarrollado por el equipo técnico europeo de Lovol para granjas medianas y grandes, con conducción cómoda y rendimiento confiable.', brand: 'LOVOL' },
   { title: 'LOVOL TD1454', image: '/images/LOVOL TD1454.png', desc: '145 hp turbo alimentado, embrague seco 13 doble, motor SHANGHAI 6 cilindros, tracción 4x4, velocidades 16+8 sincronizado, toma de fuerza 540-1000 rpm, dirección hidráulica, 2200 rpm, levante a 610 mm > 3500 kg.', brand: 'LOVOL' },
+  { title: 'LOVOL TR1504', image: '/images/LOVOL TR1504.png', desc: '150 hp turbo alimentado, embrague seco 14 doble, motor SHANGHAI 6 cilindros, tracción 4x4, velocidades 16+16 sincronizado, dirección hidráulica, 2200 rpm, levante a 610 mm > 3500 kg, peso total 7620 kg. Modelo desarrollado por el equipo técnico europeo de Lovol para granjas medianas y grandes, con conducción cómoda y rendimiento confiable.', brand: 'LOVOL' },
   { title: 'Tractor EVO 205', image: '/images/Tractor EVO 205.png', desc: 'Tractor EVO 205 con la impronta de la marca más elegida por los argentinos. Sólido, funcional y versátil, con excelente desempeño para múltiples tareas en campo, ganadería y tambo. Ideal para actividades forrajeras, desmalezado, hilerado, picado, rollos, roturación, siembra de predios, tabaco, cosecha y traslado.', brand: 'PAUNY' },
-  { title: 'Tractor EVO ASISTIDO 230-250-280 A', image: '/images/Tractor EVO ASISTIDO 230 –250 – 280 A.png', desc: 'La línea EVO propone una amplia gama con óptima relación calidad/precio para llevar la fuerza de Pauny al campo. Tracción asistida, articulados doble tracción y tracción total P-Trac con variantes de potencia y motor para grandes extensiones, bajo consumo por hectárea y máxima fuerza de tracción.', brand: 'PAUNY' },
-  { title: 'Tractor EVO ASISTIDO NG 250/280', image: '/images/Tractor EVO ASISTIDO 230 –250 – 280 A.png', desc: 'La línea EVO NG ofrece tractores con tracción asistida y variantes de potencia y motor para grandes extensiones. Combina bajo consumo por hectárea, máxima fuerza de tracción, mejor rendimiento y mayor confort.', brand: 'PAUNY' },
+  { title: 'Tractor EVO ASISTIDO 230-250-280 A', image: '/images/remplazopauny 280.png', desc: 'La línea EVO propone una amplia gama con óptima relación calidad/precio para llevar la fuerza de Pauny al campo. Tracción asistida, articulados doble tracción y tracción total P-Trac con variantes de potencia y motor para grandes extensiones, bajo consumo por hectárea y máxima fuerza de tracción.', brand: 'PAUNY' },
+  { title: 'Tractor EVO ASISTIDO NG 250/280', image: '/images/remplazopauny 280.png', desc: 'La línea EVO NG ofrece tractores con tracción asistida y variantes de potencia y motor para grandes extensiones. Combina bajo consumo por hectárea, máxima fuerza de tracción, mejor rendimiento y mayor confort.', brand: 'PAUNY' },
   { title: 'Brioso 215', image: '/images/Brioso 215.png', desc: 'Un compacto de fuerza y agilidad. De gran potencia, es ideal para tareas difíciles y exigentes. Equipado con motor Cummins y sistema hidráulico Load Sensing Premium. Diseñado para siembra directa de última generación, con gran visibilidad, ergonomía, eficiencia de consumo y confiabilidad superadora.', brand: 'PAUNY' },
   { title: 'Tractor Línea BRAVO 540/580ie/710ie/780ie', image: '/images/TRACTOR LÍNEA BRAVO.png', desc: 'La línea BRAVO ofrece mayor capacidad hidráulica y eficiencia en consumo de combustible. Especialmente desarrollada para siembra directa neumática con caudal variable, incorpora tecnología para mínima compactación y mayor capacidad de tracción. Cabina totalmente presurizada, visión panorámica y máximo confort y seguridad del operario.', brand: 'PAUNY' }
 ]
@@ -70,7 +70,7 @@ export default function Page() {
                   <span className="ml-3"><Badge>Postventa fuerte</Badge></span>
                   <span className="ml-3"><Badge>Respaldo regional</Badge></span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold max-w-xl">Maquinaria que trabaja como vos.</h1>
+                <h1 className="text-4xl md:text-5xl font-bold max-w-xl">Maquinarias y servicios</h1>
                 <p className="mt-4 text-lg max-w-xl">Equipos agrícolas, repuestos y servicio técnico que responden cuando más lo necesitás.</p>
                 <div className="mt-6 flex flex-col sm:flex-row gap-3">
                   <div className="mt-6 flex flex-col sm:flex-row gap-3">
@@ -115,7 +115,6 @@ export default function Page() {
           <div className="mt-6 grid md:grid-cols-3 gap-6">
             <SolutionCard title="Venta de maquinaria" desc="Equipos robustos y listos para trabajar." cta="https://wa.me/549XXXXXXXXXX?text=Hola%20PICABUEY%2C%20quiero%20consultar%20por%20VENTAS" style={{ animationDelay: '80ms' }} />
             <SolutionCard title="Repuestos" desc="Stock y envío rápido a toda la región." cta="https://wa.me/549XXXXXXXXXX?text=Hola%20PICABUEY%2C%20quiero%20consultar%20por%20REPUESTOS" style={{ animationDelay: '160ms' }} />
-            <SolutionCard title="Servicio técnico" desc="Postventa y mantenimiento especializado." cta="https://wa.me/549XXXXXXXXXX?text=Hola%20PICABUEY%2C%20quiero%20consultar%20por%20SERVICIOS" style={{ animationDelay: '240ms' }} />
           </div>
         </div>
       </section>
@@ -129,8 +128,7 @@ export default function Page() {
               originales para garantizar el máximo rendimiento, seguridad y vida útil de tu maquinaria agrícola.
             </p>
             <p className="mt-4 text-gray-700">
-              Trabajamos con repuestos oficiales de marcas líderes como Stara, CLAAS, Pauny, Kubota, Lovol y Genovese,
-              asegurando compatibilidad exacta y desempeño óptimo en cada equipo.
+              Trabajamos con repuestos oficiales de marcas líderes como Stara, CLAAS, Pauny, Kubota, Lovol, Genovese, Valtra y Massey Ferguson.
             </p>
             <h3 className="mt-6 text-lg font-semibold text-[var(--verde)]">¿Por qué elegir repuestos originales?</h3>
             <ul className="mt-3 space-y-2 text-gray-700">
@@ -268,7 +266,7 @@ export default function Page() {
               </div>
               <div className="bg-white p-4 rounded-lg shadow-soft text-gray-800">
                 <div className="font-semibold">Direcciones</div>
-                <div className="text-sm text-gray-600">Av. Paraguay 2720 - Salta 
+                <div className="text-sm text-gray-600">Av. Paraguay 2720 - Salta
                   <br></br>Av. España 565 - Embarcación</div>
               </div>
             </div>

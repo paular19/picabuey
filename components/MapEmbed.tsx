@@ -6,7 +6,7 @@ export default function MapEmbed() {
       <div className="w-full h-64">
         <iframe
           title="ubicacion-picabuey"
-          src="https://www.google.com/maps?q=-24.7821,-65.4232&center=-24.7821,-65.4232&z=15&output=embed&hl=es"
+          src="https://www.google.com/maps?q=Av.+Paraguay+2720,+Salta,+Argentina&z=16&output=embed&hl=es"
           className="w-full h-full border-0"
           loading="lazy"
         />
