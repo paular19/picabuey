@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-export default function MachineCard({ image, title, desc, brand, style }: { image: string; title: string; desc: string; brand: string; style?: React.CSSProperties }) {
+export default function MachineCard({ image, title, desc, brand, style }: { image: string; title: string; desc: React.ReactNode; brand: string; style?: React.CSSProperties }) {
   const waBase = 'https://wa.me/5493874576655'
   const text = encodeURIComponent(`Hola, quiero consultar por ${title}`)
   const wa = `${waBase}?text=${text}`

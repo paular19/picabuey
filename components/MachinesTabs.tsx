@@ -7,7 +7,7 @@ import MachineCard from './MachineCard'
 interface Machine {
     title: string
     image: string
-    desc: string
+    desc: React.ReactNode
     brand: string
 }
 

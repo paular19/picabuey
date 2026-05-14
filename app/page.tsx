@@ -18,7 +18,17 @@ const machines = [
   { title: 'MX5100', image: '/images/MX5100.png', desc: '51 hp diesel 4 cilindros - 4x4 - 3 puntos. Inversor mecánico.', brand: 'KUBOTA' },
   { title: 'M8540 Narrow', image: '/images/M8540Narrow.png', desc: '85 hp viñatero compacto - 3 puntos - inversor electrohidráulico - sistema bi-speed para mejor giro. Para viñedos angostos, invernaderos y frutales. Con y sin cabina.', brand: 'KUBOTA' },
   { title: 'M9540', image: '/images/M9540.png', desc: '95 hp diesel 4 cilindros turbo - 4x4 - 3 puntos - inversor electrohidráulico - eje delantero de engranaje cónico para maniobras fáciles. Con y sin cabina.', brand: 'KUBOTA' },
-  { title: 'M108S', image: '/images/M108S.png', desc: '104 hp diesel 4 cilindros turbo - 4x4 - 3 puntos - inversor electrohidráulico - eje delantero de engranaje cónico. Cabina con suspensión, asiento neumático, aire acondicionado y filtros de carbono.', brand: 'KUBOTA' },
+  {
+    title: 'M108S',
+    image: '/images/M108S.png',
+    desc: (
+      <>
+        104 hp diesel 4 cilindros turbo - 4x4 - 3 puntos - inversor electrohidráulico - eje delantero de engranaje cónico. Cabina con suspensión, asiento neumático, aire acondicionado y filtros de carbono.{' '}
+        <strong>KUBOTA M135X:</strong> 135 CV 4 cilindros turbo intercooler. Transmisión: 16x16 semi-powershift. Inversor: Electro Hidráulico. Tres puntos: Categoría II - Estabilizadores telescópicos. Eje delantero: Engranaje cónico con Bi-Speed. Radio de giro (m): 4,5. Neumáticos delanteros: 14.9 R 24. Neumáticos traseros: 18.4 R 38. El resto idem M108S.
+      </>
+    ),
+    brand: 'KUBOTA'
+  },
   { title: 'Fox', image: '/images/fox.png', desc: 'Escarificador ideal para el plantío directo, descompactando el suelo a una profundidad de 26 cm y manteniendo 70% del rastrojo en la superficie.', brand: 'STARA' },
   { title: 'Starplan', image: '/images/starplan.png', desc: 'Pala hidráulica niveladora reversible Starplan 5000.', brand: 'STARA' },
   { title: 'Imperador 3.0', image: '/images/imperador3.0.png', desc: 'Controlador completo para agricultura de precisión, diseñado y proyectado por Stara. Fácil de manejar. Proporciona interactividad entre la máquina y el operador.', brand: 'STARA' },
@@ -32,7 +42,18 @@ const machines = [
   { title: 'Guapa', image: '/images/guapa.png', desc: 'Modelos de 24 a 28 líneas (ideal arroz) y Guapa Supra 44-60 líneas. Guapa Supra Winter para cultivos de invierno como trigo, avena y cebada.', brand: 'STARA' },
   { title: 'Trion 710, 720, 740', image: '/images/trion.png', desc: 'Tecnología de trilla APS + ROTO PLUS para alto rendimiento con cuidado del grano. Tolva de hasta 12.000 litros y descarga de hasta 130 l/s. Motores Cummins L9 eficientes (Stage V), automatización CEMOS DIALOG y CEMOS AUTOMATIC, y gran versatilidad con cabina confortable, TERRA TRAC y opción MONTANA para pendientes.', brand: 'CLAAS' },
   { title: 'Lexion 7700, 8800', image: '/images/lexion.png', desc: 'Sistema APS SYNFLOW con trilla eficiente y cuidadosa de la paja, con cambios rápidos entre cultivos. Automatización avanzada CEMOS (AUTO CROP FLOW, AUTO SLOPE y AUTO CLEANING), alta potencia y gran capacidad de descarga, tecnología TERRA TRAC, cabina confortable con CEBIS y adaptación ágil a distintos cultivos.', brand: 'CLAAS' },
-  { title: 'Jaguar 900 Green Eye', image: '/images/jaguar.png', desc: 'Tambor de cuchillas V-FLEX. CEMOS AUTO KNIFE CONDITION para monitorear cuchillas y recomendar afilado óptimo. CLAAS NUTRIMETER para medir sustancia seca y componentes en tiempo real. Ejes delantero y trasero con regulación de presión de neumáticos para adaptar tracción y cuidado del suelo.', brand: 'CLAAS' },
+  {
+    title: 'Jaguar 900 Green Eye',
+    image: '/images/jaguar.png',
+    desc: (
+      <>
+        Tambor de cuchillas V-FLEX. CEMOS AUTO KNIFE CONDITION para monitorear cuchillas y recomendar afilado óptimo. CLAAS NUTRIMETER para medir sustancia seca y componentes en tiempo real. Ejes delantero y trasero con regulación de presión de neumáticos para adaptar tracción y cuidado del suelo.{' '}
+        <strong>JAGUAR 900 / 940 / 950 / 960 / 980:</strong> Gran rendimiento de caudal bajo consumo de diésel, excelentes sistemas de asistencia al operario y con CLAAS connect se conectan la JAGUAR, la explotación y el concesionario. Potencia máx. ECE R 120: 490-850 CV. Tipo de construcción tambores de cuchillas: V-FLEX-V-MAX. Anchura de trabajo: 4,48-8,93 m. Tipo de motor: OM 460 LA-OM 473 LA-D2862.{' '}
+        <strong>JAGUAR 1000 / 1090 / 1200:</strong> Para el rango superior de rendimiento. El concepto de flujo de material adaptado a la potencia de motor, con compactación previa plenamente hidráulica, tambor de cuchillas de 910 mm de anchura V-FLEX y rodillos MULTI CROP CRACKER de hasta 310 mm, ofrece una máxima abertura del grano y un material de picado homogéneo con un gran caudal de procesamiento. Potencia máx. ECE R 120: 950-1110 CV. Tipo de construcción tambores de cuchillas: V-FLEX. Anchura de trabajo: 8,93 m. Tipo de motor: D2862.
+      </>
+    ),
+    brand: 'CLAAS'
+  },
   { title: 'Liner', image: '/images/liner.png', desc: 'Rastrillo hilerador CLAAS LINER para una formación de hileras uniforme, limpia y eficiente en distintos volúmenes de forraje.', brand: 'CLAAS' },
   { title: 'Segadora Disco', image: '/images/segadora.png', desc: 'Segadora de discos CLAAS diseñada para corte parejo, alta productividad y excelente calidad de trabajo en forrajes.', brand: 'CLAAS' },
   { title: 'Variant', image: '/images/variant.png', desc: 'Rotoenfardadora CLAAS VARIANT con alto rendimiento, compactación uniforme y configuración flexible para diferentes condiciones de trabajo.', brand: 'CLAAS' },
@@ -46,9 +67,21 @@ const machines = [
   { title: 'LOVOL TX1104', image: '/images/LOVOL TX1104.png', desc: '110 hp turbo alimentado, freno de disco húmedo, motor WEICHAI 4 cilindros, tracción 4x4, velocidades 12F + 12R sincronizado, toma de fuerza 540-1000 rpm, dirección hidráulica, 2200 rpm, levante a 610 mm de 2200 kg, peso total 4740 kg. Rodados: 13,6 x 24 / 16,9 x 34.', brand: 'LOVOL' },
   { title: 'LOVOL TX1204', image: '/images/LOVOL TX1204.png', desc: '120 hp turbo alimentado, freno de disco húmedo, motor WEICHAI 4 cilindros, tracción 4x4, velocidades 12+12 sincronizado, dirección hidráulica, 2200 rpm, levante a 610 mm > 2100 kg, peso total 5100 kg.', brand: 'LOVOL' },
   { title: 'LOVOL TD1454', image: '/images/LOVOL TD1454.png', desc: '145 hp turbo alimentado, embrague seco 13 doble, motor SHANGHAI 6 cilindros, tracción 4x4, velocidades 16+8 sincronizado, toma de fuerza 540-1000 rpm, dirección hidráulica, 2200 rpm, levante a 610 mm > 3500 kg.', brand: 'LOVOL' },
-  { title: 'LOVOL TR1504', image: '/images/LOVOL TR1504.png', desc: '150 hp turbo alimentado, embrague seco 14 doble, motor SHANGHAI 6 cilindros, tracción 4x4, velocidades 16+16 sincronizado, dirección hidráulica, 2200 rpm, levante a 610 mm > 3500 kg, peso total 7620 kg. Modelo desarrollado por el equipo técnico europeo de Lovol para granjas medianas y grandes, con conducción cómoda y rendimiento confiable.', brand: 'LOVOL' },
+  {
+    title: 'LOVOL TR1504',
+    image: '/images/LOVOL TR1504.png',
+    desc: (
+      <>
+        150 hp turbo alimentado, embrague seco 14 doble, motor SHANGHAI 6 cilindros, tracción 4x4, velocidades 16+16 sincronizado, dirección hidráulica, 2200 rpm, levante a 610 mm &gt; 3500 kg, peso total 7620 kg. Modelo desarrollado por el equipo técnico europeo de Lovol para granjas medianas y grandes, con conducción cómoda y rendimiento confiable.{' '}
+        <strong>LOVOL TR1804:</strong> Idem TR1504 pero 180 hp y peso de 8.820 kg. Eje delantero Carraro. Rodado delantero 540/65R28 y trasero 650/65R38.{' '}
+        <strong>LOVOL TR2204:</strong> Idem TR1504 pero 220 hp y peso de 8.810 kg. Sistema hidráulico centro cerrado (bomba a pistones) y bomba doble a engranajes para dirección y lubricación de la transmisión. Caudal de la bomba: 150 litros/minuto. Rodado delantero 16,9-28 y trasero 20.8-38 dual.{' '}
+        <strong>LOVOL 2604-N (260 PRO):</strong> Motor WEICHAI WP10H 6 cilindros 9.5L 260 HP. Embrague húmedo. 18+9 velocidades sincronizadas con HI/LOW bajo carga e inversor electrohidráulico. Sistema hidráulico centro cerrado (bomba a pistones) con caudal de 200 l/m. Rodado delantero 600/65R28 y trasero 520/85R42 dual.
+      </>
+    ),
+    brand: 'LOVOL'
+  },
   { title: 'Tractor EVO 205', image: '/images/Tractor EVO 205.png', desc: 'Tractor EVO 205 con la impronta de la marca más elegida por los argentinos. Sólido, funcional y versátil, con excelente desempeño para múltiples tareas en campo, ganadería y tambo. Ideal para actividades forrajeras, desmalezado, hilerado, picado, rollos, roturación, siembra de predios, tabaco, cosecha y traslado.', brand: 'PAUNY' },
-  { title: 'Tractor EVO ASISTIDO 230-250-280 A', image: '/images/remplazopauny 280.png', desc: 'La línea EVO propone una amplia gama con óptima relación calidad/precio para llevar la fuerza de Pauny al campo. Tracción asistida, articulados doble tracción y tracción total P-Trac con variantes de potencia y motor para grandes extensiones, bajo consumo por hectárea y máxima fuerza de tracción.', brand: 'PAUNY' },
+  { title: 'Tractor EVO ASISTIDO 230-250-280 A', image: '/images/ULTIMAFOTO.png', desc: 'La línea EVO propone una amplia gama con óptima relación calidad/precio para llevar la fuerza de Pauny al campo. Tracción asistida, articulados doble tracción y tracción total P-Trac con variantes de potencia y motor para grandes extensiones, bajo consumo por hectárea y máxima fuerza de tracción.', brand: 'PAUNY' },
   { title: 'Tractor EVO ASISTIDO NG 250/280', image: '/images/remplazopauny 280.png', desc: 'La línea EVO NG ofrece tractores con tracción asistida y variantes de potencia y motor para grandes extensiones. Combina bajo consumo por hectárea, máxima fuerza de tracción, mejor rendimiento y mayor confort.', brand: 'PAUNY' },
   { title: 'Brioso 215', image: '/images/Brioso 215.png', desc: 'Un compacto de fuerza y agilidad. De gran potencia, es ideal para tareas difíciles y exigentes. Equipado con motor Cummins y sistema hidráulico Load Sensing Premium. Diseñado para siembra directa de última generación, con gran visibilidad, ergonomía, eficiencia de consumo y confiabilidad superadora.', brand: 'PAUNY' },
   { title: 'Tractor Línea BRAVO 540/580ie/710ie/780ie', image: '/images/TRACTOR LÍNEA BRAVO.png', desc: 'La línea BRAVO ofrece mayor capacidad hidráulica y eficiencia en consumo de combustible. Especialmente desarrollada para siembra directa neumática con caudal variable, incorpora tecnología para mínima compactación y mayor capacidad de tracción. Cabina totalmente presurizada, visión panorámica y máximo confort y seguridad del operario.', brand: 'PAUNY' }
@@ -115,6 +148,7 @@ export default function Page() {
           <div className="mt-6 grid md:grid-cols-3 gap-6">
             <SolutionCard title="Venta de maquinaria" desc="Equipos robustos y listos para trabajar." cta="https://wa.me/549XXXXXXXXXX?text=Hola%20PICABUEY%2C%20quiero%20consultar%20por%20VENTAS" style={{ animationDelay: '80ms' }} />
             <SolutionCard title="Repuestos" desc="Stock y envío rápido a toda la región." cta="https://wa.me/549XXXXXXXXXX?text=Hola%20PICABUEY%2C%20quiero%20consultar%20por%20REPUESTOS" style={{ animationDelay: '160ms' }} />
+            <SolutionCard title="Atención post venta" desc="Soporte técnico especializado para que tu equipo no se detenga." cta="https://wa.me/5493874842119?text=Hola%20PICABUEY%2C%20quiero%20consultar%20por%20POST%20VENTA" style={{ animationDelay: '240ms' }} />
           </div>
         </div>
       </section>
@@ -182,8 +216,6 @@ export default function Page() {
             <div className="max-w-5xl mx-auto text-center">
 
               <h2 className="mt-4 text-3xl md:text-4xl font-bold text-gray-900">Contacto directo</h2>
-              <p className="mt-3 text-gray-700 text-lg">Elegí el área y escribinos por WhatsApp. El correo queda a mano.</p>
-
               <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
                 <div className="rounded-xl p-5 text-white shadow-soft" style={{ background: 'rgb(184, 124, 35)' }}>
                   <div className="text-sm uppercase tracking-wide text-white/85">Ventas</div>
